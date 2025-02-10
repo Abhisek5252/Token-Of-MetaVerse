@@ -1,1 +1,54 @@
+body {
+  background-color: #222;
+  color: #eee;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 5px #0f0;
+}
+
+#game-container {
+  background-color: #111;
+  border: 2px solid #0f0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0f0;
+  margin-bottom: 2rem;
+}
+
+#bottom-sections {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#wallet,
+#games,
+#airdrop,
+#tasks {
+  background-color: #111;
+  border: 2px solid #0f0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0f0;
+  text-align: center;
+}
+
+#wallet > div {
+  margin-bottom: 1rem;
+}
+
+/* Style for the daily login interface (placeholder) */
+#daily-login {
+  /* Add your styling for the daily login here */
+}
