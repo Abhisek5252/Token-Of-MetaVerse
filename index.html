@@ -1,45 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MetaVerse: A new era</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>MetaVerse: A new era</h1>
-    <div id="game-container">
-        </div>
+<html>
 
-    <div id="bottom-sections">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Cyberpunk Daily Login</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="game-container">
+    <h1 id="game-title">Cyberpunk Daily Login</h1>
+    <div id="game-content">
+      <p id="login-message">Welcome, Runner! Access the Metaverse.</p>
+      <button id="login-button">Login</button>
+      <div id="game-area">
         <div id="wallet">
-            <h2>Wallet</h2>
-            <div>MetaRush Coins: <span id="metarush-balance">1000</span></div>
-            <div>MetaVerse Tokens: <span id="metaverse-balance">5</span></div>
-            <input type="number" id="metarush-input" placeholder="MetaRush Coins to Convert">
-            <button id="convert-button">Convert</button>
-            <div>MetaVerse Tokens: <span id="metaverse-output"></span></div>
+          <h2>Wallet</h2>
+          <p>Your balance: <span id="balance">0</span></p>
         </div>
         <div id="games">
-            <h2>Games</h2>
-            <h3>Spin Wheel</h3>
-            <button id="spin-button">Spin</button>
-            <div>Result: <span id="wheel-result"></span></div>
-            <div>Win Amount: <span id="win-amount"></span></div>
-            <h3>Coin Rain</h3>
-            <button id="rain-button">Start Rain</button>
-            <div>Collected Coins: <span id="collected-coins"></span></div>
+          <h2>Games</h2>
+          <p>Play games to earn rewards!</p>
         </div>
         <div id="airdrop">
-            <h2>Airdrop</h2>
-            <p>Coming soon...</p>
+          <h2>Airdrop</h2>
+          <p>Check for daily airdrops.</p>
         </div>
         <div id="tasks">
-            <h2>Tasks</h2>
-            <div id="questions"></div>
+          <h2>Tasks</h2>
+          <p>Complete tasks for extra rewards.</p>
         </div>
+      </div>
     </div>
-
-    <script src="script.js"></script>
+  </div>
+  <div id="metaverse-image"></div>
+  <script src="script.js"></script>
 </body>
+
 </html>
