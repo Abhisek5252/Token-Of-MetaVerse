@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.cdnfonts.com/css/rockwell');
+@import url('https://fonts.cdnfonts.com/css/imago');
+
+:root {
+  --primary: #1a365d;
+  --secondary: #2d3748;
+  --background: #ffffff;
+  --text: #2d3748;
+  --accent: #3182ce;
+  --cyberpunk: #ff2a6d;
+  --cyberpunk-glow: #00ff9f;
+}
+
+.text-cyberpunk {
+  color: var(--cyberpunk);
+  text-shadow: 0 0 10px var(--cyberpunk-glow);
+}
+
+.glow-blue {
+  text-shadow: 0 0 15px #4299e1;
+}
+
+body {
+  font-family: 'Imago', 'Rockwell', serif;
+  font-size: 22px;
+  background: var(--background);
+  letter-spacing: 0.01em;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rockwell', serif;
+  font-size: 32px;
+  text-align: center;
+  margin: 1.5em 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 1000;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+}
+
+.heading-gradient {
+  background: linear-gradient(45deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientFlow 8s ease infinite;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.card-shadow {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Ocean Theme Animations */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Enhanced Gradients */
+.bg-ocean-gradient {
+  background: linear-gradient(to bottom, #ffffff, #e6f3ff, #cce6ff);
+}
+
+.text-ocean-gradient {
+  background: linear-gradient(to right, #0066cc, #0099ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Button Styles */
+.btn-ocean {
+  background: var(--accent);
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.btn-ocean:hover {
+  background: var(--secondary);
+  transform: translateY(-1px);
+}
+
+.card-shadow {
+  border: 1px solid #E4E9F0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+input:invalid {
+  border-color: #ef4444;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
