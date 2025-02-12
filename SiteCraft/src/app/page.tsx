@@ -22,7 +22,7 @@ export default function Home() {
               Start Free Trial 🚀
             </Link>
           </div>
-          <p className="text-xl text-blue-800 mb-12 font-black uppercase">
+          <p className="text-xl text-cyan-400 mb-12 font-black uppercase">
             TRY GLOBOLOSYS FREE FOR 3 DAYS, NO CREDIT CARD REQUIRED
           </p>
         </div>
